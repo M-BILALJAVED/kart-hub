@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Kart Hub - shop</title>
+    <!-- our own style  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/57efafa6c2.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+     <!-- header  -->
+     <header class="header-wrapper">
+        <nav class="navbar-light bg-light">
+            <div class="container-fluid px-sm-4 px-1">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a class="navbar-brand" href="#">
+                        <img src="/images/logo.png" width="140px" alt="Brand Logo">
+                    </a>
+                    <!-- Icons next to the brand -->
+                    <div class="head-icon d-flex align-items-center gap-4 dropdown">
+                        <i class="fa-solid fa-bars" style="font-size: 20px;"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-bag-shopping dropdown-toggle" type="button"
+                            id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                            aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                            <li class="dropdown-item">
+                                <div class="cart-hover d-flex align-items-center gap-4">
+                                    <img src="/images/slide1.png" alt="">
+                                    <div class="">
+                                        <strong>ELEGANT <br> WOMEN <br>HANDBAG'S</strong>
+                                        <br><span>1x</span>
+                                        <p>Rs 130.20</p>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </li>
+                            <!-- reapet -->
+                            <li class="dropdown-item">
+                                <div class="cart-hover d-flex align-items-center gap-4">
+                                    <img src="/images/slide2.png" alt="">
+                                    <div class="">
+                                        <strong>ELEGANT <br> WOMEN <br>HANDBAG'S</strong>
+                                        <br><span>1x</span>
+                                        <p>Rs 130.20</p>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </li>
+                            <hr>
+                            <li class="dropdown-itema px-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3>Sub Total</h3> <span>Rs 4000</span>
+                                </div>
+                            </li>
+                            <li class="text-center">
+
+                                <button class="primary-btn mt-2">CHECKOUT</button>
+                            </li>
+                        </ul>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="menu">
+                        <ul class="d-flex m-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/shop.html">MEN FASHION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/shop.html">WOMEN FASHION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/shop.html">KID'S</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contact.html">CONTACT US</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="">
+                        <i class="px-sm-2 px-1 fa-solid fa-magnifying-glass" data-bs-toggle="modal"
+                            data-bs-target="#myModal-search"></i>
+                        <a class="megaMenubtn" href="javascript:void(0)"><img src="/images/menu.png" alt=""></a>
+                    </div>
+                    <div class="megaMenu bg-white">
+                        <div class="row m-0 text-center justify-content-end">
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide2.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header  -->
+
+    <!-- shop-banner -->
+    <section class="shop-banner-wrapper">
+        <div class="container">
+            <!-- up banner  -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shop-banner d-sm-flex align-items-center pt-4 py-sm-0">
+                        <div class="col-md-6">
+                            <h2>Kart HUB - PRODUCT LIST</h2>
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Shop</li>
+                                    <li class="breadcrumb-item active" aria-current="page">WOMEN FASHION</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col-md-6 d-sm-flex justify-content-end d-none">
+                            <img src="/images/shop-bnner.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- shop-banner -->
+
+
+    <!-- single PRODUCT -->
+    <section class="single-pruduct">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-6 col-12">
+                    <div class="single-prod-left">
+                        <!-- Swiper -->
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="single-prod-right">
+                        <div class="">
+                            <div class="single-prod-star">★★★★★<span>(25 Reviews)</span></div>
+                            <h2>WOMEN DENNIM DRESS</h2>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quas ut laboriosam
+                                fugit
+                                distinctio repellendus molestiae magni maxime, incidunt quia itaque, ab asperiores
+                                dignissimos? Excepturi omnis numquam adipisci esse modi aperiam quaerat neque nisi
+                                veritatis
+                                praesentium, a sint iste nobis.</p>
+                        </div>
+                        <div class="single-prod-info py-4 ">
+                            <h5>PRODUCT INFO</h5>
+                            <div class="single-prod-price">
+                                <p>5000 Rs. <span class="text-decoration-line-through">9999 rs.</span> </p>
+                            </div>
+                            <div class="d-flex gap-4 align-items-center">
+                                <div class="dropdown single-prod-size">
+                                    <a class="btn dropdown-toggle  p-0" href="#" role="button" id="single-prod-size"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        SIZE </a>
+                                    <ul class="dropdown-menu" aria-labelledby="single-prod-size">
+                                        <li><a class="dropdown-item" href="#">small</a></li>
+                                        <li><a class="dropdown-item" href="#">Large</a></li>
+                                        <li><a class="dropdown-item" href="#">X-Large</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown single-prod-color">
+                                    <a class="btn dropdown-toggle  p-0" href="#" role="button" id="single-prod-color"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        COLOR </a>
+                                    <ul class="dropdown-menu" aria-labelledby="single-prod-color">
+                                        <li><a class="dropdown-item" href="#">red</a></li>
+                                        <li><a class="dropdown-item" href="#">green</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown single-prod-quantity">
+                                    <a class="btn dropdown-toggle  p-0" href="#" role="button" id="single-prod-color"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Quantity </a>
+                                    <ul class="dropdown-menu" aria-labelledby="single-prod-color">
+                                        <li><a class="dropdown-item" href="#">1</a></li>
+                                        <li><a class="dropdown-item" href="#">2</a></li>
+                                        <li><a class="dropdown-item" href="#">3</a></li>
+                                        <li><a class="dropdown-item" href="#">4</a></li>
+                                    </ul>
+                                    <!-- <label for="quantity">Quantity:</label>
+                                    <input style="width: 40px;" type="number" id="quantity" name="quantity" min="1"
+                                        max="5"> -->
+                                </div>
+                            </div>
+                            <div class="single-pro-btn mt-4">
+                                <button class="primary-btn">Add To Cart</button>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- single PRODUCT -->
+
+    <!-- single-prod-tab -->
+    <section class="single-prod-tab">
+        <div class="container">
+            <!-- single-prod-tabs -->
+            <ul class="nav nav-pills justify-content-center" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#DESCRIPTION">ITEM DESCRIPTION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#INFO">ADDITION INFO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#REVIEWS">ITEM REVIEWS</a>
+                </li>
+            </ul>
+
+            <!-- content -->
+            <div class="tab-content">
+                <div id="DESCRIPTION" class="container tab-pane active"><br>
+                    <h3>Description:</h3>
+                    <p>Effortlessly enhance your online store's user experience with our Dynamic Price Range Slider
+                        Component, designed for seamless integration with Bootstrap 5. This sleek and responsive slider
+                        allows users to filter products by price, providing a more interactive and engaging shopping
+                        experience. </p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li><strong>Customizable Design:</strong> Adjust colors, sizes, and other styles to match your
+                            website's branding effortlessly.</li>
+                        <li><strong>Smooth and Responsive:</strong> Optimized for all devices, ensuring a smooth sliding
+                            experience on both desktop and mobile.</li>
+                        <li><strong>Easy Integration:</strong> Simple to implement with Bootstrap 5, requiring minimal
+                            coding skills.</li>
+                        <li><strong>Cross-Browser Compatible:</strong> Works flawlessly across all major
+                            browsers,including Chrome, Firefox, Safari, and Edge.</li>
+                        <li><strong>Lightweight & Fast:</strong> Built with clean and efficient code, ensuring it
+                            doesn't slow down your site.</li>
+                        <li><strong>Accessible:</strong> Designed with accessibility in mind, making it usable for
+                            everyone, including users with disabilities.</li>
+                    </ul>
+
+                    <h3>Use Cases:</h3>
+                    <ul>
+                        <li><strong>E-commerce Websites:</strong> Perfect for product filtering by price, enhancing the
+                            customer shopping experience.</li>
+                    </ul>
+                </div>
+                <div id="INFO" class="container tab-pane fade"><br>
+                    <h3>Additional Information:</h3>
+                    <ul>
+                        <li><strong>Compatibility:</strong> Works with Bootstrap 5 and higher versions. Can be adapted
+                            for other frameworks with minor adjustments.</li>
+                        <li><strong>Support:</strong> Includes 6 months of free technical support, with options to
+                            extend further.</li>
+                        <li><strong>Documentation:</strong> Comprehensive documentation is provided, including setup
+                            instructions, customization guides, and troubleshooting tips.</li>
+                        <li><strong>Updates:</strong> Regular updates ensure compatibility with the latest web standards
+                            and browser versions.</li>
+                        <li><strong>License:</strong> Single-use license with options for multi-site usage available
+                            upon request.</li>
+                    </ul>
+                </div>
+                <div id="REVIEWS" class="container tab-pane fade"><br>
+                    <div class="review">
+                        <div class="review-header d-flex justify-content-between">
+                            <strong>Customer Reviews <span>(3)</span></strong>
+                            <p><a href="">view all reviews</a></p>
+                        </div>
+                        <div class="review-body">
+                            <div class="inside-review-box">
+                                <div class="d-flex gap-3 flex-md-nowrap flex-wrap justify-content-center">
+                                    <div class="review-body-left">
+                                        <img class="rounded-circle" width="80px" height="80px"
+                                            src="https://via.placeholder.com/50" alt="User">
+                                    </div>
+                                    <div class="review-body-right">
+                                        <div
+                                            class="d-flex gap-3 mb-2 flex-md-nowrap flex-wrap justify-content-md-start justify-content-center">
+                                            <strong>RANA BILAL JAVED</strong>
+                                            <span class="date">12 aug 2024</span>
+                                            <span class="d-sm-block d-none">|</span>
+                                            <div class="star-icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="rating">Rating: 5/5</span>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-center text-md-start">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Libero consectetur
+                                                nemo incidunt quibusdam dolorem perspiciatis illo beatae modi quis
+                                                optio!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="inside-review-box">
+                                <div class="d-flex gap-3 flex-md-nowrap flex-wrap justify-content-center">
+                                    <div class="review-body-left">
+                                        <img class="rounded-circle" width="80px" height="80px"
+                                            src="https://via.placeholder.com/50" alt="User">
+                                    </div>
+                                    <div class="review-body-right">
+                                        <div
+                                            class="d-flex gap-3 mb-2 flex-md-nowrap flex-wrap justify-content-md-start justify-content-center">
+                                            <strong>RANA BILAL JAVED</strong>
+                                            <span class="date">12 aug 2024</span>
+                                            <span class="d-sm-block d-none">|</span>
+                                            <div class="star-icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="rating">Rating: 5/5</span>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-center text-md-start">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Libero consectetur
+                                                nemo incidunt quibusdam dolorem perspiciatis illo beatae modi quis
+                                                optio!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="inside-review-box">
+                                <div class="d-flex gap-3 flex-md-nowrap flex-wrap justify-content-center">
+                                    <div class="review-body-left">
+                                        <img class="rounded-circle" width="80px" height="80px"
+                                            src="https://via.placeholder.com/50" alt="User">
+                                    </div>
+                                    <div class="review-body-right">
+                                        <div
+                                            class="d-flex gap-3 mb-2 flex-md-nowrap flex-wrap justify-content-md-start justify-content-center">
+                                            <strong>RANA BILAL JAVED</strong>
+                                            <span class="date">12 aug 2024</span>
+                                            <span class="d-sm-block d-none">|</span>
+                                            <div class="star-icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="rating">Rating: 5/5</span>
+                                        </div>
+                                        <div class="">
+                                            <p class="text-center text-md-start">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Libero consectetur
+                                                nemo incidunt quibusdam dolorem perspiciatis illo beatae modi quis
+                                                optio!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="reviewform">
+                            <form class="row g-3 mb-3">
+                                <h3 class="text-center">Write a Review</h3>
+                                <div class="col-12">
+                                    <strong>Your Rating:
+                                        <span>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </span>
+                                    </strong>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="inputPassword4" class="form-label">Name</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-12">
+                                    <textarea placeholder="Enter a Message" class="form-control"
+                                        id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- single-prod-tab -->
+
+    <!-- SUBSCRIBE -->
+    <section class="subscribe-wrapper">
+        <div class="container">
+            <div class="row gap-lg-0 gap-4">
+                <div class="col-lg-5 col-12 text-center">
+                    <h2 style="margin-top: .5rem;">SUBSCRIBE NEWSLETTER</h2>
+                </div>
+                <div class="col-lg-7 col-12 " style="margin:0 auto;">
+                    <div class="input-group">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <button type="button" class="subscribe-btn">send now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SUBSCRIBE -->
+
+    <!-- foooter -->
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 col-12">
+                    <ul class="nav justify-content-center fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TERM & CONDITION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">POLICY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MAP</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <p>© 2024 <span class="fw-bold"><a href="">Kart Hub.</a></span>Online shopping center. All Rights
+                        Reserved</p>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="">
+                        <p class="fw-bold"><a href="">FOLLOW US ON SOCIAL</a></p>
+                        <i class="mx-2 fa-brands fa-facebook"></i>
+                        <i class="mx-2 fa-brands fa-twitter"></i>
+                        <i class="mx-2 fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12 text-center">
+                    <img src="/images/logo.png" width="180px" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- foooter -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- own js -->
+    <script src="/js/main.js"></script>
+
+
+    <!-- Bootstrap JS and Popper.js (These should be at the end of the body) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+
+    <!-- The Modal od search bar -->
+    <div class="modal" id="myModal-search">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body bg-dark rounded-2">
+                    <div class="subscribe-wrapper" style="padding: 0; background-color: transparent;">
+                        <div class="input-group">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <button type="button" class="subscribe-btn">send now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

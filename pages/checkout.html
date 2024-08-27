@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Kart Hub</title>
+    <!-- our own style  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/57efafa6c2.js" crossorigin="anonymous"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header class="header-wrapper">
+        <nav class="navbar-light bg-light">
+            <div class="container-fluid px-sm-4 px-1">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a class="navbar-brand" href="#">
+                        <img src="/images/logo.png" width="140px" alt="Brand Logo">
+                    </a>
+                    <!-- Icons next to the brand -->
+                    <div class="head-icon d-flex align-items-center gap-4 dropdown">
+                        <i class="fa-solid fa-bars" style="font-size: 20px;"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-bag-shopping dropdown-toggle" type="button"
+                            id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                            aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                            <li class="dropdown-item">
+                                <div class="cart-hover d-flex align-items-center gap-4">
+                                    <img src="/images/slide1.png" alt="">
+                                    <div class="">
+                                        <strong>ELEGANT <br> WOMEN <br>HANDBAG'S</strong>
+                                        <br><span>1x</span>
+                                        <p>Rs 130.20</p>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </li>
+                            <!-- reapet -->
+                            <li class="dropdown-item">
+                                <div class="cart-hover d-flex align-items-center gap-4">
+                                    <img src="/images/slide2.png" alt="">
+                                    <div class="">
+                                        <strong>ELEGANT <br> WOMEN <br>HANDBAG'S</strong>
+                                        <br><span>1x</span>
+                                        <p>Rs 130.20</p>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </li>
+                            <hr>
+                            <li class="dropdown-itema px-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3>Sub Total</h3> <span>Rs 4000</span>
+                                </div>
+                            </li>
+                            <li class="text-center">
+
+                                <button class="primary-btn mt-2">CHECKOUT</button>
+                            </li>
+                        </ul>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="menu">
+                        <ul class="d-flex m-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/shop.html">MEN FASHION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/shop.html">WOMEN FASHION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/shop.html">KID'S</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contact.html">CONTACT US</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="">
+                        <i class="px-sm-2 px-1 fa-solid fa-magnifying-glass" data-bs-toggle="modal"
+                            data-bs-target="#myModal-search"></i>
+                        <a class="megaMenubtn" href="javascript:void(0)"><img src="/images/menu.png" alt=""></a>
+                    </div>
+                    <div class="megaMenu bg-white">
+                        <div class="row m-0 text-center justify-content-end">
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide1.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12">
+                                <div class="megamenu1">
+                                    <div class="image-section">
+                                        <img src="/images/slide2.png" alt="Women's Section">
+                                        <h2 class="mt-4">Women</h2>
+                                    </div>
+                                    <div class="megamenu-links text-center py-3">
+                                        <h3>MEN</h3>
+                                        <ul class="p-0">
+                                            <li class="mt-3"><a href="#">Best Seller</a></li>
+                                            <li><a href="#">Popular Products</a></li>
+                                            <li><a href="#">Men Cloth</a></li>
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Men Jeans</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Shoes</a></li>
+
+                                        </ul>
+                                        <p><a href="">VIEW ALL</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header  -->
+
+    <!-- shop-banner -->
+    <section class="shop-banner-wrapper">
+        <div class="container">
+            <!-- up banner  -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shop-banner d-sm-flex align-items-center pt-4 py-sm-0">
+                        <div class="col-md-6">
+                            <h2>Kart HUB - Checkout</h2>
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Shop</li>
+                                    <li class="breadcrumb-item active" aria-current="page">WOMEN FASHION</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col-md-6 d-sm-flex justify-content-end d-none">
+                            <img src="/images/shop-bnner.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- shop-banner -->
+
+    <!-- checkout   -->
+    <section class="checkout-wrapper">
+        <div class="container py-2 pb-5 overflow-hidden">
+            <div class="row">
+                <div class="col-12">
+                    <div class="py-2">
+                        <h2 class="text-center">Checkout form</h2>
+                        <p class="mb-1 pt-4">Returning customer <a href="">Click here to login</a></p>
+                        <p>Have a coupon code? <a href=""> Click here to enter code</a></p>
+                    </div>
+                    <main>
+                        <div class="row g-5">
+                            <div class="col-md-5 col-lg-4 order-md-last">
+                                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-primary">Your cart</span>
+                                    <span class="badge bg-primary rounded-pill">3</span>
+                                </h4>
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Product name</h6>
+                                            <small class="text-muted">Brief description</small>
+                                        </div>
+                                        <span class="text-muted">$12</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Second product</h6>
+                                            <small class="text-muted">Brief description</small>
+                                        </div>
+                                        <span class="text-muted">$8</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                                        <div>
+                                            <h6 class="my-0">Third item</h6>
+                                            <small class="text-muted">Brief description</small>
+                                        </div>
+                                        <span class="text-muted">$5</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between bg-light">
+                                        <div class="text-success">
+                                            <h6 class="my-0">Promo code</h6>
+                                            <small>EXAMPLECODE</small>
+                                        </div>
+                                        <span class="text-success">−$5</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Total (USD)</span>
+                                        <strong>$20</strong>
+                                    </li>
+                                </ul>
+
+                                <form class="card p-2">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Promo code">
+                                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-7 col-lg-8">
+                                <h4 class="mb-3">Billing address</h4>
+                                <form class="needs-validation" novalidate>
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <label for="firstName" class="form-label">First name</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder=""
+                                                value="" required>
+                                            <div class="invalid-feedback">
+                                                Valid first name is required.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label for="lastName" class="form-label">Last name</label>
+                                            <input type="text" class="form-control" id="lastName" placeholder=""
+                                                value="" required>
+                                            <div class="invalid-feedback">
+                                                Valid last name is required.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="username" class="form-label">Username</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text">@</span>
+                                                <input type="text" class="form-control" id="username"
+                                                    placeholder="Username" required>
+                                                <div class="invalid-feedback">
+                                                    Your username is required.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="email" class="form-label">Email <span
+                                                    class="text-muted">(Optional)</span></label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="you@example.com">
+                                            <div class="invalid-feedback">
+                                                Please enter a valid email address for shipping updates.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="address" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="address"
+                                                placeholder="1234 Main St" required>
+                                            <div class="invalid-feedback">
+                                                Please enter your shipping address.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="address2" class="form-label">Address 2 <span
+                                                    class="text-muted">(Optional)</span></label>
+                                            <input type="text" class="form-control" id="address2"
+                                                placeholder="Apartment or suite">
+                                        </div>
+
+                                        <div class="col-md-5">
+                                            <label for="country" class="form-label">Country</label>
+                                            <select class="form-select" id="country" required>
+                                                <option value="">Choose...</option>
+                                                <option>United States</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid country.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label for="state" class="form-label">State</label>
+                                            <select class="form-select" id="state" required>
+                                                <option value="">Choose...</option>
+                                                <option>California</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid state.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <label for="zip" class="form-label">Zip</label>
+                                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Zip code required.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="my-4">
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="same-address">
+                                        <label class="form-check-label" for="same-address">Shipping address is the same
+                                            as my billing address</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" for="save-info">Save this information for next
+                                            time</label>
+                                    </div>
+
+                                    <hr class="my-4">
+
+                                    <h4 class="mb-3">Payment</h4>
+
+                                    <div class="my-3">
+                                        <div class="form-check">
+                                            <input id="credit" name="paymentMethod" type="radio"
+                                                class="form-check-input" checked required>
+                                            <label class="form-check-label" for="credit">Credit card</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                                                required>
+                                            <label class="form-check-label" for="debit">Debit card</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input id="paypal" name="paymentMethod" type="radio"
+                                                class="form-check-input" required>
+                                            <label class="form-check-label" for="paypal">PayPal</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row gy-3">
+                                        <div class="col-md-6">
+                                            <label for="cc-name" class="form-label">Name on card</label>
+                                            <input type="text" class="form-control" id="cc-name" placeholder=""
+                                                required>
+                                            <small class="text-muted">Full name as displayed on card</small>
+                                            <div class="invalid-feedback">
+                                                Name on card is required
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="cc-number" class="form-label">Credit card number</label>
+                                            <input type="text" class="form-control" id="cc-number" placeholder=""
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Credit card number is required
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <label for="cc-expiration" class="form-label">Expiration</label>
+                                            <input type="text" class="form-control" id="cc-expiration" placeholder=""
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Expiration date required
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <label for="cc-cvv" class="form-label">CVV</label>
+                                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Security code required
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="my-4">
+
+                                    <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to
+                                        checkout</button>
+                                </form>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- checkout   -->
+
+
+    <!-- SUBSCRIBE -->
+    <section class="subscribe-wrapper">
+        <div class="container">
+            <div class="row gap-lg-0 gap-4">
+                <div class="col-lg-5 col-12 text-center">
+                    <h2 style="margin-top: .5rem;">SUBSCRIBE NEWSLETTER</h2>
+                </div>
+                <div class="col-lg-7 col-12 " style="margin:0 auto;">
+                    <div class="input-group">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <button type="button" class="subscribe-btn">send now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SUBSCRIBE -->
+
+    <!-- foooter -->
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 col-12">
+                    <ul class="nav justify-content-center fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TERM & CONDITION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">POLICY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MAP</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <p>© 2024 <span class="fw-bold"><a href="">Kart Hub.</a></span>Online shopping center. All Rights
+                        Reserved</p>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="">
+                        <p class="fw-bold"><a href="">FOLLOW US ON SOCIAL</a></p>
+                        <i class="mx-2 fa-brands fa-facebook"></i>
+                        <i class="mx-2 fa-brands fa-twitter"></i>
+                        <i class="mx-2 fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12 text-center">
+                    <img src="/images/logo.png" width="180px" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- foooter -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- own js -->
+    <script src="/js/main.js"></script>
+
+
+    <!-- Bootstrap JS and Popper.js (These should be at the end of the body) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+
+    <!-- The Modal od search bar -->
+    <div class="modal" id="myModal-search">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body bg-dark rounded-2">
+                    <div class="subscribe-wrapper" style="padding: 0; background-color: transparent;">
+                        <div class="input-group">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <button type="button" class="subscribe-btn">send now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

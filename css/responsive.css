@@ -1,5 +1,45 @@
+@media screen and (width < 1032px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .header-wrapper .head-icon i:first-child {
+        display: block !important;
+    }
+
+    .menu ul {
+        visibility: hidden;
+        position: absolute;
+        background-color: var(--bg-light-gray);
+        left: 0;
+        top: 45px;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu ul li {
+        margin: auto !important;
+    }
+
+
+}
+
 @media screen and (max-width:992px) {
     .hero-wrapper .hero-right {
         width: 100% !important;
+    }
+
+    .header-wrapper button:first-child {
+        display: contents;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .single-prod-left {
+        width: 100%;
+        margin: 0 auto;
     }
 }
