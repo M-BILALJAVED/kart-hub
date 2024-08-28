@@ -155,7 +155,7 @@ footer i:hover {
 .header-wrapper .nav-item a::after {
     content: "";
     width: 100%;
-    height: 3px;
+    height: 2.5px;
     background: var(--primary-color);
     position: absolute;
     left: 0;
