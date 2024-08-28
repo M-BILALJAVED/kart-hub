@@ -193,6 +193,10 @@ footer i:hover {
     display: none !important;
 }
 
+.header-wrapper .fa-magnifying-glass{
+    cursor: pointer;
+}
+
 /* cart-hover */
 .header-wrapper .cart-hover img {
     width: 120px;
@@ -965,9 +969,14 @@ footer p {
     font-size: 12px !important;
 }
 
-.cart-wrapper .botton-checkout button:nth-child(1) {
-    background-color: var(--bg-black) !important;
+.cart-wrapper .botton-checkout button {
+    background-color: var(--bg-black);
 }
+
+.cart-wrapper .botton-checkout button:last-child {
+    background-color: var(--primary-color) !important;
+}
+
 
 /* checkout  */
 .checkout-wrapper>div>div p {
