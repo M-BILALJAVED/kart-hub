@@ -78,50 +78,42 @@ h5 {
     outline: none;
     border-radius: 30px;
     line-height: 19px;
-    animation: mybtn 2s ease 0s 1 normal forwards;
 }
 
-@keyframes mybtn {
-    0% {
-        animation-timing-function: ease-in;
-        opacity: 0;
-        transform: translateY(-250px);
+.primary-btn:hover {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
     }
 
-    38% {
-        animation-timing-function: ease-out;
-        opacity: 1;
-        transform: translateY(0);
+    10% {
+        transform: rotate(8deg);
     }
 
-    55% {
-        animation-timing-function: ease-in;
-        transform: translateY(-65px);
+    20%,
+    40%,
+    60% {
+        transform: rotate(-10deg);
     }
 
-    72% {
-        animation-timing-function: ease-out;
-        transform: translateY(0);
+    30%,
+    50%,
+    70% {
+        transform: rotate(10deg);
     }
 
-    81% {
-        animation-timing-function: ease-in;
-        transform: translateY(-28px);
+    80% {
+        transform: rotate(-8deg);
     }
 
     90% {
-        animation-timing-function: ease-out;
-        transform: translateY(0);
-    }
-
-    95% {
-        animation-timing-function: ease-in;
-        transform: translateY(-8px);
-    }
-
-    100% {
-        animation-timing-function: ease-out;
-        transform: translateY(0);
+        transform: rotate(8deg);
     }
 }
 
@@ -154,9 +146,10 @@ footer i {
 }
 
 .header-wrapper i:hover,
+.header-wrapper .megaMenubtn:hover img,
 footer i:hover {
-    color: var(--primary-color);
-    transform: scale(1.2);
+    color: var(--primary-color) !important;
+    transform: scale(1.2) !important;
 }
 
 .header-wrapper .nav-item a::after {
@@ -193,7 +186,7 @@ footer i:hover {
     display: none !important;
 }
 
-.header-wrapper .fa-magnifying-glass{
+.header-wrapper .fa-magnifying-glass {
     cursor: pointer;
 }
 
@@ -753,10 +746,15 @@ footer p {
     text-align: left;
     padding: 20px 0;
 }
+.shop-banner-wrapper .row:first-child{
+    background-color: beige;
+    margin-bottom: 40px;
+}
 
 .shop-banner img {
     max-width: 100%;
     height: auto;
+    mix-blend-mode: darken;
 }
 
 /* down-banner */
